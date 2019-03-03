@@ -29,12 +29,6 @@ Everthing is explained clearly in comments in respective files
 
 [↥ back to top](#table-of-contents)
 
-## Tools
-
-- [Common Readme Template](https://github.com/Saikat2019/MY_README_TEMPLATE/blob/master/README.md) - A common readme template I use.
-
-[↥ back to top](#table-of-contents)
-
 ## Get Feedback
 
  -	### Give me feed back here.

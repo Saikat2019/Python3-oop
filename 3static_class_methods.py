@@ -9,24 +9,24 @@ class Employee:
 
 		Employee.num_of_emps += 1
 
-
-	def fullname(self):
+#regular methods automatically takes the instance as first arg
+	def fullname(self): #it's a regular method
 		return '{} {}'.format(self.first,self.second)
 
 	def applyRaise(self):
 			self.pay = int(self.pay * self.raise_amount)
 
-	@classmethod
-	def set_raise_amt(cls,amount):
-		cls.raise_amount = amount
+	@classmethod #altering the functionality of this method
+	def set_raise_amt(cls,amount):  #it will take the class as 1st arg 
+		cls.raise_amount = amount   #instead of instance
 
-	@classmethod
-	def from_string(cls,emp_str):
+	@classmethod   # class method can be used as alternative 
+	def from_string(cls,emp_str):  #construction as this one
 		first , last , pay = emp_str.split('-')
-		return cls(first,last,pay)
+		return cls(first,last,pay) # here cls is same as Employee
 
-	@staticmethod
-	def is_workday(day):
+	@staticmethod #decorator for static method 
+	def is_workday(day): #static methods don't pass anything autometically
 		if day.weekday() == 5 or day.weekday() == 6 :
 			return False
 		return True

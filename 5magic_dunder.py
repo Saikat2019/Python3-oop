@@ -1,3 +1,10 @@
+#magic methods - emulate some built-in methods in python
+#implement operator overloding
+#dunder means double'_' -- __add__() it's a dunder method
+#you can change some special methods , like for __add__
+#we define add in our way ... in line 32
+
+
 class Employee:
 	num_of_emps = 0
 	raise_amount = 1.04
@@ -22,7 +29,7 @@ class Employee:
 	def __str__(self):
 		return "{}-{}".format(self.fullname(),self.email)
 
-	def __add__(self,other):
+	def __add__(self,other): #defining __add__() like this
 		return self.pay +other.pay
 
 	def __len__(self):
